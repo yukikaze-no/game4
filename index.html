@@ -490,7 +490,7 @@ function update() {
     ctx.fillStyle = color;
     ctx.font = "32px sans-serif";
     ctx.fillText(lastJudgment, canvas.width / 2 - 60, hitY - 40);
-  }
+    }
 
   document.getElementById("info").innerText =
     `Score: ${score} / Combo: ${combo} / Max Combo: ${maxCombo}`;
@@ -535,6 +535,7 @@ function returnToMenu() {
   document.getElementById("result").style.display = "none";
   document.getElementById("menu").style.display = "block";
 }
+
 /* ------------------------------
    PWA SERVICE WORKER
 ------------------------------ */
